@@ -1,12 +1,152 @@
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer"> I would first enlighten them on different security threats to understand why they would need good and trustworthy protection against it. After that I would advise them to take necessary steps such as sanitization of data, secure authorization and authentication and to make use of well-known third-party applications. And off course always do good research on the different methods beforehand to provide the best security possible. </p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Shop quality rainjackets for men and women.">
+    <title>Rainydays | Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <a href="index.html"><img src="images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Rainydays logo, homepage"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mens.html">Men's</a></li>
+                <li><a href="womens.html">Women's</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="shoppingbag.html"><img src="images/other/SHOPING-BAG.png" alt="Shopping bag."> </a>
+    </header>
+    <!--Main-->
+    <main>
+        <!--Hero-->
+        <section class="hero-home">
+            <h1>Welcome to rainydays</h1>
+            <div class="products_button">
+                <button class="products_mens" type="button">Shop men's</button>
+                <button class="products_womens" type="button">Shop Women's</button>
+            </div>
+        </section>
+        <!--Bestsellers-->
+        <section class="bestsellers">
+            <h2>BESTSELLERS</h2>
+            <div class="product mens-royal">
+                <div>
+                    <img src="images/products/mens-royal.png" alt="Men's Royal windbreaker">
+                </div>
+                <div>
+                    <div class="colours mens-royal1">
+                    </div>
+                    <div class="colours mens-royal2">
+                    </div>
+                    <div class="colours mens-royal3">
+                    </div>
+                    <p>XS-XXL</p>
+                </div>
+                <p>ROYAL</p>
+                <p>Windbreaker</p>
+                <p>Kr. 1799,-</p>
+            </div>
+            <div class="product mens-imprint">
+                <div>
+                    <img src="images/products/mens-imprint.png" alt="Men's Imprint fleece jacket.">
+                </div>
+                <div>
+                    <div class="colours mens-imprint">
+                    </div>
+                    <p>XS-XXL</p>
+                </div>
+                <p>IMPRINT</p>
+                <p>Fleece</p>
+                <p>Kr. 699,-</p>
+            </div>
+            <div class="product spirit">
+                <div>
+                    <img src="images/products/spirit.png" alt="Women's Spirit shelljacket.">
+                </div>
+                <div>
+                    <div class="color-picker spirit">
+
+                    </div>
+                    <p>XS-XXL</p>
+                </div>
+                <p>SPIRIT</p>
+                <p>Shelljacket</p>
+                <p>Kr. 1299,-</p>
+            </div>
+            <div class="product sigma">
+                <div>
+                    <img src="images/products/sigma.png" alt="Men's Sigma shelljacket.">
+                </div>
+                <div>
+                    <img src="" alt="colour choises on the jacket">
+                    <p>XS-XXL</p>
+                </div>
+                <p>SIGMA</p>
+                <p>Shelljacket</p>
+                <p>Kr. 1299,-</p>
+            </div>
+        </section>
+        <!--Newsletter-->
+        <section class="newsletter">
+            <h2>Sign up to our newsletter</h2>
+            <p>And be the first to know about our deals and offers!</p>
+            <div class="newsletter__submit">
+                <input type="email" name="email">
+            </div>
+            <div class="sign-up-button">
+                <input type="submit" value="Sign up!">
+            </div>
+        </section>
+        <!--Sale-->
+        <section class="sale">
+            <h2>SALE</h2>
+            <div class="product mens-nomad">
+                <div>
+                    <img src="images/products/mens-nomad.png" alt="Men's nomad shelljacket.">
+                </div>
+                <div>
+                    <img src="" alt="colour choises on the jacket">
+                    <p>XS-XXL</p>
+                </div>
+                <p>NOMAD</p>
+                <p>Shelljacket</p>
+                <p>Kr. 840,-</p>
+            </div>
+            <div class="product womens-renegade">
+                <div>
+                    <img src="images/products/womens-renegade.png" alt="Women's renegade winter rainjacket.">
+                </div>
+                <div>
+                    <img src="" alt="colour choises on the jacket">
+                    <p>XS-XXL</p>
+                </div>
+                <p>RENEGADE</p>
+                <p>Winter rainjacket</p>
+                <p>Kr. 1749,-</p>
+            </div>
+        </section>
+        <!--Short info on homepage-->
+        <section class="rainydays-info-short">
+            <img src="images/homepage/RAINYDAYS-LOGO-FULL.png" alt="Rainydays, pushing the comfort zone.">
+            <p>We take pride in our products and in providing exceptional customer service. Whether you're hiking in the mountains or commuting to work on a rainy day, Rainydays has got you covered</p>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+
+    </footer>
+</body>
 </html>
