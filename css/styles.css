@@ -1,29 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 
 body {
-    margin: o;
-    padding: 0;
-    margin: 0 auto;
     font-family: inter, sans-serif;
     background-color: #d9d9d9;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 header {
     width: 100%;
     background-color: #2E4745;
     box-shadow: 4px 0 8px #233634;
-    position: fixed;
-    display: flex;
+    position: sticky;
+    top: 0;
 }
 
-nav li{
-    display: inline-block;
-    text-align: center;
+nav {
+    display: flex;
+    gap: 8rem;
 }
 
 nav a{
     color: #fff;
     font-family: inter,arial;
-    text-decoration: none;    
+    text-decoration: none;
+    font-size: 1.5rem;    
 }
 
 nav a:hover {
@@ -31,9 +40,11 @@ nav a:hover {
     color: #BBBBBB;
 }
 
-main{
+
+
+/* main{
     padding-top: 50px;
-}
+} */
 
 .hero-home {
     background-repeat: no-repeat;
@@ -165,6 +176,7 @@ main{
 }
 
 .product-hero {
+    margin-top: 0;
     background-color: #2E4745;
 }
 
