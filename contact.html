@@ -30,41 +30,45 @@
 </header> 
 <!--Main-->
   <main>
-    <h1>Contact us</h1>
-    <section>
-      <div>
+    <div class="contact-hero">
+      <h1>Contact us</h1>
+    </div>
+    <section class="contact">
+      <div class="contact-fill">
+        <div class="contact-box">
+          <div class="contact-fill">
+            <label for="contact-email">E-mail*</label>
+            <input type="contact-email" name="contact-email" id="contact-email" placeholder="E-mail address" required>
+          </div>
+          <div class="contact-fill">
+            <label for="contact-name">Name on card*</label>
+            <input type="text" name="contact-name" id="contact-name" placeholder="Full name" required>
+          </div>
+          <div class="contact-message">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" placeholder="Write message here" required>
+          </div>
+        </div>
+        <button class="contact-button">Submit</button>
+      </div>    
+      <div class="sideinfo">
         <div>
-          <label for="contact-email">E-mail*</label>
-          <input type="contact-email" name="contact-email" id="contact-email" placeholder="E-mail address" required>
+          <i class="fa-regular fa-clock"></i>
+          <h5>Opening hours:</h5>
+          <p>Mon - Fri 09.00-17.00</p>
         </div>
         <div>
-          <label for="contact-name">Name on card*</label>
-          <input type="text" name="contact-name" id="contact-name" placeholder="Full name" required>
+          <i class="fa-solid fa-phone"></i>
+          <h5>Phone:</h5>
+          <p>+47 381 17 766</p>
         </div>
         <div>
-          <label for="message">Message</label>
-          <input type="text" name="message" id="message" placeholder="Write message here" required>
+          <i class="fa-regular fa-envelope"></i>
+          <h5>E-mail:</h5>
+          <p>support@rainydays.no</p>
         </div>
+        <p>On weekdays, we answer your e-mail within 24 hours</p>
       </div>
-      <button>Submit</button>
-    </section>
-    <section>
-      <div>
-        <i class="fa-regular fa-clock"></i>
-        <h5>Opening hours:</h5>
-        <p>Mon - Fri 09.00-17.00</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-phone"></i>
-        <h5>Phone:</h5>
-        <p>+47 381 17 766</p>
-      </div>
-      <div>
-        <i class="fa-regular fa-envelope"></i>
-        <h5>E-mail:</h5>
-        <p>support@rainydays.no</p>
-      </div>
-      <p>On weekdays, we answer your e-mail within 24 hours</p>
     </section>
   </main>
 <!--Footer-->

@@ -31,6 +31,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
 }
 
 .logo-nav{
@@ -72,7 +73,7 @@ header nav ul li a:hover{
 }
 
 .hero-home-text{
-    padding: 20px;
+    padding: 1rem;
     display: block;
 }
 
@@ -99,9 +100,11 @@ header nav ul li a:hover{
     background-color: var(--text-color);
     font-weight: 500;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 1rem;
     font-size: 0.9em;
     font-weight: 700;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+    margin: 2rem;
 }
 
 .bestsellers, .sale {
@@ -130,8 +133,38 @@ header nav ul li a:hover{
     background: url(../images/homepage/NEWSLETTER.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-
+    padding: 7rem 15rem;
 }
+
+.newsletter p{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.newsletter input{
+    background-color: #fff;
+    margin: 1rem;
+    width: 20%;
+    padding: 0.6rem 2rem;
+    border: none;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}
+
+.newsletter button{
+    background-color: var(--theme-color);
+    padding: 0.6rem 2rem;
+    color: var(--text-color);
+    border: none;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}
+
+.newsletter h3{
+    font-family: inika, serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
 
 .products-sale{
     display: flex;
@@ -326,3 +359,34 @@ header nav ul li a:hover{
     background-color: #283d0e;
 }
 
+.contact-hero{
+    background-image: url(/images/contact/hero-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 3rem;
+}
+
+.contact-hero h1{
+    font-size: 5rem;
+    font-family: inika, serif;
+    margin-left: 15rem;
+    font-weight: 400;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-box{
+    padding: 7rem;
+    justify-content: space-evenly;
+}
+
+.sideinfo{
+    padding: 7rem;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+}
