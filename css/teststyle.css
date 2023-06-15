@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --bg-color: #bbb;
+    --text-color: #fff;
+    --theme-color: #2e4745;
+    --dark-theme: #233634;
+}
+
+body {
+    font-family: inter, sans-serif;
+    background-color: #d9d9d9;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header {
+    width: 100%;
+    background-color: #2E4745;
+    box-shadow: 4px 0 8px #233634;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    gap: 8rem;
+}
+
+nav a{
+    color: #fff;
+    font-family: inter,sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;    
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #BBBBBB;
+}
+
+span.inika-font {
+    font-family: inika, serif;
+}
+
+.hero-home {
+    background-repeat: no-repeat;
+    background-image: url(../images/homepage/hero-background-home.jpg);
+    background-size: 100%;
+    font-family: inter, sans-serif;
+    font-weight: 100;
+}
+
+.product img{
+    background-color: #BBBBBB;
+}
+
+.product img:hover{
+    background-color: #a8afaf;
+}
+
+.product-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.colours {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 150px;
+    border-width: 3px #fff;
+    margin: 30px auto;
+}
+
+.mens-royal1{
+    background-color: #083b58;
+}
+
+.mens-royal2{
+    background-color: #b71414;
+}
+
+.mens-royal3{
+    background-color: #d8af1f;
+}
+
+.mens-omnis1{
+    background-color: #89224b;
+}
+
+.mens-omnis2{
+    background-color: #345f00;
+}
+
+.mens-omnis3{
+    background-color: #fff;
+}
+
+.mens-imprint1{
+    background-color: #272a1c;
+}
+
+.mens-imprint2{
+    background-color: #fff;
+}
+
+.mens-imprint3{
+    background-color: #000;
+}
+
+.mens-imprint4{
+    background-color: #4745b1;
+}
+
+.mens-imprint5{
+    background-color: #a2a50a;
+}
+
+.mens-nomad1{
+    background-color: #5e5a3b;
+}
+
+.mens-nomad2{
+    background-color: #848484;
+}
+
+.mens-nomad3{
+    background-color: #000;
+}
+
+.mens-nomad4{
+    background-color: #3f3e7b;
+}
+
+.mens-nomad5{
+    background-color: #fff;
+}
+
+.mens-sigma1{
+    background-color: #004469;
+}
+
+.mens-sigma2{
+    background-color: #707070;
+}
+
+.mens-sigma3{
+    background-color: #000;
+}
+
+.mens-renegade1{
+    background-color: #8f8f8f;
+}
+
+.mens-renegade2{
+    background-color: #000;
+}
+
+.mens-renegade3{
+    background-color: #283d0e;
+}
+
+.newsletter {
+    background-image: url(../images/homepage/NEWSLETTER.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.rainydays-info-short {
+    background-image: url(../images/homepage/HOMEPAGE-BOTTOM-IMAGE.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.product-hero {
+    margin-top: 0;
+    background-color: #2E4745;
+}
+
+.women {
+    background-image: url(../images/productpage-women/top-section-women-pp.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
