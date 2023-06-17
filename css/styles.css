@@ -68,7 +68,7 @@ header nav ul li a:hover{
 
 .hero-home{
     display: flex;
-    background-image: url(../images/homepage/hero-background-home.jpg);
+    background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/homepage/hero-background-home.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 50px 350px;
