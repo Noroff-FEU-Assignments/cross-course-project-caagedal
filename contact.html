@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel=stylesheet  href="CSS/styles.css">
-  <title>Rainydays | Home</title>
+  <title>Rainydays | Contact</title>
+  <link rel="icon" href="images/homepage/RAINYDAYS-LOGO-SHORT.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,10 +20,10 @@
   <a href="index.html"><img src="images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Logo of rainydays, directs to homepage" class="logo-nav"></a>
   <nav class="top-nav">
     <ul>
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="mens.html">Men's</a></li>
       <li><a href="womens.html">Women's</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
@@ -34,35 +35,31 @@
       <h1>Contact us</h1>
     </div>
     <section class="contact">
+      <!--Form-->
       <div class="contact-fill">
-        <div class="contact-box">
-          <div class="contact-fill">
-            <label for="contact-email">E-mail*</label>
-            <input type="contact-email" name="contact-email" id="contact-email" placeholder="E-mail address" required>
-          </div>
-          <div class="contact-fill">
-            <label for="contact-name">Name on card*</label>
-            <input type="text" name="contact-name" id="contact-name" placeholder="Full name" required>
-          </div>
-          <div class="contact-message">
+          <label for="contact-email">E-mail*</label>
+          <input type="contact-email" name="contact-email" id="contact-email" placeholder="E-mail address" required>
+          <label for="contact-name">Name on card*</label>
+          <input type="text" name="contact-name" id="contact-name" placeholder="Full name" required>
+          <div class="message">
             <label for="message">Message</label>
             <input type="text" name="message" id="message" placeholder="Write message here" required>
           </div>
-        </div>
         <button class="contact-button">Submit</button>
-      </div>    
+      </div>  
+      <!--Info-->  
       <div class="sideinfo">
-        <div>
+        <div class="grid-contact">
           <i class="fa-regular fa-clock"></i>
           <h5>Opening hours:</h5>
           <p>Mon - Fri 09.00-17.00</p>
         </div>
-        <div>
+        <div class="grid-contact">
           <i class="fa-solid fa-phone"></i>
           <h5>Phone:</h5>
           <p>+47 381 17 766</p>
         </div>
-        <div>
+        <div class="grid-contact">
           <i class="fa-regular fa-envelope"></i>
           <h5>E-mail:</h5>
           <p>support@rainydays.no</p>

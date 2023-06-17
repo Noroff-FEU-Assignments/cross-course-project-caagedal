@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel=stylesheet  href="../CSS/styles.css">
-  <title>Rainydays | Home</title>
+  <title>Rainydays | Serein</title>
+  <link rel="icon" href="images/homepage/RAINYDAYS-LOGO-SHORT.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 <body>
 <!--header-->
 <header>
-  <a href="index.html"><img src="images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Logo of rainydays, directs to homepage" class="logo-nav"></a>
+  <a href="/index.html"><img src="/images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Logo of rainydays, directs to homepage" class="logo-nav"></a>
   <nav class="top-nav">
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
@@ -30,66 +31,76 @@
 </header> 
 <!--Main-->
   <main>
-    <section>
-      <div>
-        <div>
-          <img src="../images/products/serein-pink.png" alt="Women's Serein waterproof shelljacket">
+    <section class="product-specific">
+      <div class="product-display">
+        <div class="large">
+          <img src="../images/product-specific-women/large.png" alt="Women's Serein waterproof shelljacket">
         </div>
+        <div class="small">
+          <img src="../images/product-specific-women/small-left.png" alt="Women's Serein waterproof shelljacket">
+          <div class="middle">
+            <img src="../images/product-specific-women/small-middle.png" alt="Women's Serein waterproof shelljacket">
+          </div>
+          <img src="../images/product-specific-women/small-right.png" alt="Women's Serein waterproof shelljacket">
+        </div>
+      </div>
+      <div  class="product-description">
         <div>
-          <img src="../images/products/serein-pink.png" alt="Women's Serein waterproof shelljacket">
+          <p>Rainyday's</p>
+          <h1>Women's Serein waterproof shelljacket</h1>
+          <p>Kr. 1299,-</p>
           <div>
-            <img src="../images/products/serein-pink.png" alt="Women's Serein waterproof shelljacket">
+            <p>Color:</p>
+            <div class="specific-color">
+              <div class="colors mens-omnis1">
+              </div>
+              <div class="colors mens-omnis2">
+              </div>
+              <div class="colors mens-omnis3">
+              </div>
+            </div>
           </div>
-          <img src="../images/products/serein-pink.png" alt="Women's Serein waterproof shelljacket">
-        </div>
-      </div>
-      <div>
-        <p>Rainyday's</p>
-        <h1>Women's Serein waterproof shelljacket</h1>
-        <p>Kr. 1299,-</p>
-        <div>
-          <p>Color:</p>
-          <div class="color">
+          <div>
+            <label for="sizes" class="sizes">Sizes</label>
+            <select id="sizes" name="sizes">
+              <option value="xxs">XXS</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
           </div>
         </div>
         <div>
-          <label for="sizes" class="sizes">Sizes</label>
-          <select id="sizes" name="sizes">
-            <option value="xxs">XXS</option>
-            <option value="xs">XS</option>
-            <option value="s">S</option>
-            <option value="m">M</option>
-            <option value="l">L</option>
-            <option value="xl">XL</option>
-            <option value="xxl">XXL</option>
-          </select>
+          <a href="../checkout.html">Add to cart</a>
         </div>
-      </div>
-      <div>
-        <a href="../checkout.html">Add to cart</a>
-      </div>
-      <h5>Women's serein waterproof shelljacket</h5>
-      <p>The SEREIN model is a minimalist shell jacket designed to keep you dry and safe through the warmer seasons of the year. It is durable and light weight so that it is easy to bring with you on your next adventure.</p>
-      <div>
-        <h5>Properties</h5>
-        <ul>
-          <li>Water resistant</li>
-          <li>Wind resistant</li>
-          <li>Highly durable</li>
-          <li>Lightweight</li>
-        </ul>
-      </div>
-      <div>
-        <h5>Functionality</h5>
-        <ul>
-          <li>Full front zipper</li>
-          <li>Velcro handcuffs</li>
-          <li>Reflex material</li>
-          <li>Pockets</li>
-        </ul>
-      </div>
-      <div>
-        <a href="../womens.html">Return to women's</a>
+        <h5>Women's serein waterproof shelljacket</h5>
+        <p>The SEREIN model is a minimalist shell jacket designed to keep you dry and safe through the warmer seasons of the year. It is durable and light weight so that it is easy to bring with you on your next adventure.</p>
+        <div class="specific-list">
+          <div>
+            <h5>Properties</h5>
+            <ul>
+              <li>Water resistant</li>
+              <li>Wind resistant</li>
+              <li>Highly durable</li>
+              <li>Lightweight</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Functionality</h5>
+            <ul>
+              <li>Full front zipper</li>
+              <li>Velcro handcuffs</li>
+              <li>Reflex material</li>
+              <li>Pockets</li>
+            </ul>
+          </div>
+        </div>  
+        <div>
+          <a href="../womens.html">Return to women's</a>
+        </div>
       </div>
     </section>
     <section>
