@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=stylesheet  href="CSS/styles.css">
+  <title>Rainydays | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4639419757.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--header-->
+  <header>
+    <a href="index.html"><img src="images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Logo of rainydays, directs to homepage"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mens.html">Men's</a></li>
+        <li><a href="womens.html">Women's</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </header> 
+<!--Main-->
+  <main>
+    <div>
+        <h1>Checkout</h1>
+    </div>
+    <section>
+        <h2>Shopping bag</h2>
+        <div>
+            <img src="images/products/womens-nomad-pink.png" alt="Women's nomad pink">
+            <div>
+                <h6> Women's <span>nomad</span> waterproof windbreaker</h6>
+                <p>Size: M</p>
+                <p>Color: Blush</p>
+            </div>
+            <div>
+                <input type="number" id="amount" placeholder="Amount">
+            </div>
+            <p>Kr. 1199,-</p>
+            <p>Kr. 840,-</p>
+        </div>
+        <div>
+            <img src="images/products/womens-nomad-pink.png" alt="Women's nomad pink">
+            <div>
+                <h6> Women's <span>nomad</span> waterproof windbreaker</h6>
+                <p>Size: M</p>
+                <p>Color: Blush</p>
+            </div>
+            <div>
+                <input type="number" id="amount" placeholder="Amount">
+            </div>
+            <p>Kr. 1499,-</p>
+        </div>
+        <p>Total discount</p>
+        <p>Kr. 359,-</p>
+        <p>Summary</p>
+        <p>Kr. 2339,-</p>
+    </section>
+    <section>
+        <h2>Shipping information</h2>
+        <div>
+            <div>
+                <label for="email">E-mail*</label>
+                <input type="email" name="email" id="email" placeholder="E-mail address" required>
+            </div>
+            <div>
+                <input type="checkbox" name="signup" id="signup">
+                <label for="signup">Sign up to our newsletter.</label>
+            </div>
+        </div>
+        <div>
+            <label for="firstname">First name*</label>
+            <input type="text" name="firstname" id="firstname" placeholder="First name" required>
+        </div>
+        <div>
+            <label for="lastname">Last name*</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
+        </div>
+        <div>
+            <label for="phonenumber">Phone number*</label>
+            <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone number" required>
+        </div>
+        <div>
+            <label for="address">Adress*</label>
+            <input type="text" name="address" id="address" placeholder="Address" required>
+        </div>
+        <div>
+            <label for="city">City*</label>
+            <input type="text" name="city" id="city" placeholder="City" required>
+        </div>
+        <div>
+            <label for="postal">Postal code*</label>
+            <input type="text" name="postal" id="postal" placeholder="Postal code" required>
+        </div>
+        <div>
+            <legend>Shipping</legend>
+            <label><input type="radio" name="radio" value="Express delivery" />Express delivery</label>
+            <label><input type="radio" name="radio" value="Home delivery" />Home delivery</label>
+            <label><input type="radio" name="radio" value="Pick-up point delivery" />Pick-up point delivery</label>
+        </div>
+    </section>
+    <section>
+        <h2>Billing information</h2>
+        <div>
+            <label for="cardname">Name on card*</label>
+            <input type="text" name="cardname" id="cardname" placeholder="Full name" required>
+        </div>
+        <div>
+            <label for="cardnumber">Card number*</label>
+            <input type="text" name="cardnumber" id="cardnumber" placeholder="0000 0000 0000 0000" required>
+        </div>
+        <div>
+            <label for="expire">Expire date*</label>
+            <input type="text" name="expire" id="expire" placeholder="MM/YY" required>
+        </div>
+        <div>
+            <label for="cvc">CVC/CVV*</label>
+            <input type="text" name="cvc" id="cvc" placeholder="3 digits" required>
+        </div>
+        <div>
+            <input type="checkbox" name="agree" id="agree" required>
+            <label for="agree">I agree and accept <a href="#">Terms of Service</a></label>
+        </div>
+    </section>
+    <div>
+        <a href="checkout-success.html">Place order</a>
+    </div>
+  </main>
+<!--Footer-->
+  <footer>
+    <!--Help-->
+    <div>
+        <h6>Help</h6>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="contact.html">FAQ</a></li>
+                <li><a href="contact.html">Return policy</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--About-->
+    <div>
+        <h6>About</h6>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">History</a></li>
+                <li><a href="about.html">Enviromental footprint</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--social etc-->
+    <div>
+        <img src="images/other/FACEBOOK.png" alt="Facebook">
+        <img src="images/other/INSTAGRAM.png" alt="Instagram">
+        <img src="images/other/TWITTER.png" alt="Twitter">
+    </div>
+    <div>
+        <img src="images/other/VISA.png" alt="Visa">
+        <img src="images/other/VISA-EL.png" alt="Visa electron">
+        <img src="images/other/MASTERCARD.png" alt="Mastercard">
+    </div>
+    <div>
+        <p>Terms of service</p>
+        <p>&copy; 2023 Rainydays</p>
+    </div>        
+  </footer>
+</body>
+</html>
