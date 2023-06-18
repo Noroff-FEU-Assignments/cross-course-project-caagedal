@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel=stylesheet  href="CSS/styles.css">
-  <title>Rainydays | Thank you!</title>
+  <title>Rainydays | Checkout</title>
   <link rel="icon" href="images/homepage/RAINYDAYS-LOGO-SHORT.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,129 +20,147 @@
     <a href="index.html"><img src="images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Logo of rainydays, directs to homepage" class="logo-nav"></a>
     <nav class="top-nav">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="mens.html">Men's</a></li>
         <li><a href="womens.html">Women's</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
-    <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="checkout.html"><img src="/images/other/SHOPING-BAG.png" alt="Directs you to your shopping bag"></a>
   </header> 
 <!--Main-->
   <main>
+<!--Hero-->
     <div class="checkout-success-hero">
         <h1>Thank you for purchasing!</h1>
     </div>
-    <section>
-        <h2>Shopping bag</h2>
-        <div>
-            <img src="images/products/womens-nomad-pink.png" alt="Women's nomad pink">
-            <h6> Women's <span>nomad</span> waterproof windbreaker</h6>
-            <p>Size: M</p>
-            <p>Color: Blush</p>
-            <p>x1</p>
-            <p>Kr. 1199,-</p>
-            <p>Kr. 840,-</p>
-        </div>
-        <div>
-            <img src="images/products/womens-nomad-pink.png" alt="Women's nomad pink">
-            <h6> Women's <span>nomad</span> waterproof windbreaker</h6>
-            <p>Size: M</p>
-            <p>Color: Blush</p>
-            <p>x1</p>
-            <p>Kr. 1199,-</p>
-            <p>Kr. 840,-</p>
-        </div>
-        <p>Total discount</p>
-        <p>Kr. 359,-</p>
-        <p>Summary</p>
-        <p>Kr. 2339,-</p>
-    </section>
-    <section>
-        <div>
-            <h2>Details</h2>
-        </div>
-        <div>
-            <div>
-                <h5>E-mail address</h5>
-                <p>some.thing@mail.com</p>
+    <!--Bag content-->
+    <section class="bag-content" id="sum-bag">
+        <h2>Summary</h2>
+        <div class="bag">
+            <img src="images/checkout/small-blush.png" alt="Women's nomad pink">
+            <div class="normal-text">
+                <p> Women's <span>nomad</span> waterproof windbreaker</p>
+                <p>Size: M</p>
+                <p>Color: Blush</p>
             </div>
             <div>
-                <h5>Shipping address</h5>
+                <p>x 1</p>
+            </div>
+            <p><span class="saleprice">1199,-</span>Kr. 840,-</p>
+        </div>
+        <div class="bag">
+            <img src="images/checkout/small-hotpink.png" alt="Women's nomad pink">
+            <div class="normal-text">
+                <p> Women's <span>nomad</span> waterproof windbreaker</p>
+                <p>Size: M</p>
+                <p>Color: Blush</p>
+            </div>
+            <div class="item-amount">
+                <p>x 1</p>
+            </div>
+            <p>Kr. 1499,-</p>
+        </div>
+        <div class="total">
+            <div>
+                <p>Total discount</p>
+                <p>Summary</p>
+            </div>
+            <div>    
+                <p>kr. 359,-</p>
+                <p>Kr. 2339,-</p>
+            </div>
+        </div>
+    </section>
+    <!--personal information-->
+    <div class="info-h2">
+        <h2>Details</h2>
+    </div>
+    <section class="summary">
+        <div class="shipping-summary">
+            <div class="sum-mail">
+                <h3>E-mail address</h3>
+                <p>some-thing@mail.com</p>
+            </div>
+            <div class="sum-ship">
+                <h3>Shipping address</h3>
                 <p>Idril Elfenberg</p>
                 <p>Elfroad 69</p>
                 <p>1337 Elfheim</p>
                 <p>Norway</p>
                 <p>+47 999 88 777</p>
-            </div>
-            <div>
-                <h5>Delivery method</h5>
+            </div> 
+            <div class="sum-del">
+                <h3>Delivery method</h3>
                 <p>Express delivery, 1-3 workdays</p>
                 <p>Home delivery</p>
             </div>
-            <div>
-                <h5>Billing</h5>
-                <p>Credit card-VISA</p>
+        </div>
+        <div class="billing-summary">
+            <div class="sum-bill">
+                <h3>Credit card - visa</h3>
                 <p>**** **** **** 1234</p>
-                <p>Order subtotal: NOK<span>2298,-</span></p>
+                <p>Order total: NOK2298,-</p>
             </div>
-            <div>
-                <h5>Billing address</h5>
+            <div class="sum-ship">
+                <h3>Billing address</h3>
                 <p>Idril Elfenberg</p>
                 <p>Elfroad 69</p>
                 <p>1337 Elfheim</p>
                 <p>Norway</p>
                 <p>+47 999 88 777</p>
             </div>
-        </div>
-        <div>
-            <p>**An e-mail has been sent to you with your order details and tracking.**</p>
-        </div>
-        <div>
-            <a href="index.html">Return to homepage</a>
-        </div>
     </section>
+    <div class="confirm-mail">
+        <p>**An e-mail has been sent to you with your order and tracking details.**</p>
+    </div> 
+    <div class="return-home-cta">
+        <a href="index.html">Return to home</a>
+    </div>
   </main>
-<!--Footer-->
+  <!--Footer-->
   <footer>
     <!--Help-->
-    <div>
-        <h6>Help</h6>
-        <nav>
-            <ul>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="contact.html">FAQ</a></li>
-                <li><a href="contact.html">Return policy</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!--About-->
-    <div>
-        <h6>About</h6>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">History</a></li>
-                <li><a href="about.html">Enviromental footprint</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!--social etc-->
-    <div>
+    <section class="lists-footer">
+      <div class="footer-help">
+          <p>Help</p>
+          <nav class="nav-footer">
+              <ul>
+                  <li><a href="contact.html">Contact us</a></li>
+                  <li><a href="contact.html">FAQ</a></li>
+                  <li><a href="contact.html">Return policy</a></li>
+              </ul>
+          </nav>
+      </div>
+      <!--About-->
+      <div class="footer-about">
+          <p>About</p>
+          <nav class="nav-footer">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">History</a></li>
+                  <li><a href="about.html">Enviromental footprint</a></li>
+              </ul>
+          </nav>
+      </div>
+    </section>
+    <!---->
+    <div class="footer-socials">
         <img src="images/other/FACEBOOK.png" alt="Facebook">
         <img src="images/other/INSTAGRAM.png" alt="Instagram">
         <img src="images/other/TWITTER.png" alt="Twitter">
     </div>
-    <div>
-        <img src="images/other/VISA.png" alt="Visa">
-        <img src="images/other/VISA-EL.png" alt="Visa electron">
-        <img src="images/other/MASTERCARD.png" alt="Mastercard">
-    </div>
-    <div>
-        <p>Terms of service</p>
-        <p>&copy; 2023 Rainydays</p>
-    </div>        
+    <div class="footer-bottom">
+      <div class="footer-billing">
+          <img src="images/other/VISA.png" alt="Visa">
+          <img src="images/other/VISA-EL.png" alt="Visa electron">
+          <img src="images/other/MASTERCARD.png" alt="Mastercard">
+      </div>
+      <div class="footer-terms">
+          <p>&copy; 2023 Rainydays</p>
+      </div>  
+    </div>      
   </footer>
 </body>
 </html>
