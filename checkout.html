@@ -19,10 +19,10 @@
 <!--header-->
 <header>
     <a href="index.html"><img src="images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Logo of rainydays, directs to homepage" class="logo-nav"></a>
-    <input type="checkbox" id="menu-checkbox"/>
-    <label for="menu-checkbox" class="hamburger"><img src="images/other/BURGER-MENU.png"></label>
+    <input type="checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="hamburger"><img src="images/other/BURGER-MENU.png" alt="hamburger-menu"></label>
     <nav>
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="mens.html">Men's</a>
       <a href="womens.html">Women's</a>
       <a href="contact.html">Contact</a>
@@ -50,7 +50,7 @@
             </div>
             <div>
                 <label for="amount">Quantity</label>
-                <input type="number" id="amount">
+                <input type="number" class="amount">
             </div>
             <p><span class="saleprice">1199,-</span>Kr. 840,-</p>
         </div>
@@ -63,7 +63,7 @@
             </div>
             <div class="item-amount">
                 <label for="amount">Quantity</label>
-                <input type="number" id="amount">
+                <input type="number" class="amount">
             </div>
             <p>Kr. 1499,-</p>
         </div>
@@ -104,15 +104,15 @@
                 </div>
             </div>
             <div class="ship-opt">
-                <legend>Shipping method</legend>
+                <h2>Shipping method</h2>
                 <div id="express">
-                    <label><input type="radio" name="radio" value="Express delivery" />Express delivery: <span>1-3 workdays, home-delivery.</span></label>
+                    <label><input type="radio" name="radio" value="Express delivery">Express delivery: <span>1-3 workdays, home-delivery.</span></label>
                 </div>
                 <div id="homed">
-                    <label><input type="radio" name="radio" value="Home delivery" />Home delivery: <span>2-7 workdays, home-delivery.</span></label>
+                    <label><input type="radio" name="radio" value="Home delivery">Home delivery: <span>2-7 workdays, home-delivery.</span></label>
                 </div>
                 <div id="pick-up">
-                    <label><input type="radio" name="radio" value="Pick-up point delivery" />Pick-up point delivery: <span>Delivers to a pick-up point near you.</span></label>
+                    <label><input type="radio" name="radio" value="Pick-up point delivery">Pick-up point delivery: <span>Delivers to a pick-up point near you.</span></label>
                 </div>
             </div>
         </div>
@@ -144,7 +144,7 @@
   <!--Footer-->
   <footer>
     <!--Help-->
-    <section class="lists-footer">
+    <div class="lists-footer">
       <div class="footer-help">
           <p>Help</p>
           <div class="nav-footer">
@@ -166,7 +166,7 @@
               </ul>
           </div>
       </div>
-    </section>
+    </div>
     <!---->
     <div class="footer-socials">
         <img src="images/other/FACEBOOK.png" alt="Facebook">
