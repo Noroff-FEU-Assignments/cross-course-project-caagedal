@@ -427,8 +427,14 @@ Product page
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 50px 0;
+    margin: 50px 150px;
     gap: 50px 150px;
+}
+
+@media (max-width: 1580px){
+    .product-list{
+        gap: 20px 50px;
+    }
 }
 
 .product-card img{
@@ -761,7 +767,6 @@ Product specific page
 
 .product-specific{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -789,6 +794,7 @@ Product specific page
     gap: 10px;
     justify-content: space-around;
     background-color: var(--theme-color);
+    width: 70%;
 }
 
 .product-description h1, h2{
@@ -1111,6 +1117,7 @@ media queries
 @media (max-width: 700px){
     main{
         width: 100%;
+        margin-top: 87px;
     }
     .hero-home h1, .hero-home span{
         font-size: 1.7em;
@@ -1123,7 +1130,10 @@ media queries
     .hero-home a{
         width: 160px;
         padding: 10px;
+    }
 
+    .product-description{
+        width: 100%;
     }
 
     .newsletter{
@@ -1217,6 +1227,10 @@ media queries
 
     .love{
         text-align: center;
+    }
+
+    .product-specific{
+        flex-direction: column;
     }
 
 
