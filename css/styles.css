@@ -941,7 +941,7 @@ Checkout
 .saleprice{
     display: block;
     font-size: 1em;
-    color: red;
+    color: rgb(66, 7, 7);
     text-decoration: line-through;
 }
 
