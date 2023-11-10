@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A collection of good quality rainjackets designed to keep you dry no matter the weather.">
+  <meta name="description" content="High-quality rain jackets designed to withstand even the harshest weather conditions while pushing the comfort zone.">
   <link rel=stylesheet  href="CSS/styles.css">
-  <title>Rainydays | Men's</title>
+  <title>Rainydays | Home</title>
   <link rel="icon" href="images/homepage/RAINYDAYS-LOGO-SHORT.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,18 +13,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="/js/components.js" type="module"></script>
   <script src="https://kit.fontawesome.com/4639419757.js" crossorigin="anonymous"></script>
-  <script src="js/mens.js" type="module"></script>
+  
 </head>
 <body>
 <!--header-->
 <header>
   <a href="index.html"><img src="images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Logo of rainydays, directs to homepage" class="logo-nav"></a>
   <input type="checkbox" id="menu-checkbox">
-  <label for="menu-checkbox" class="hamburger"><img src="images/other/BURGER-MENU.png" alt="hamburger-menu"></label>
+  <label for="menu-checkbox" class="hamburger"><img src="images/other/BURGER-MENU.png" alt="Hamburger menu"></label>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="mens.html" class="active">Men's</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="mens.html">Men's</a>
     <a href="womens.html">Women's</a>
     <a href="contact.html">Contact</a>
     <a href="about.html">About</a>
@@ -34,23 +35,24 @@
   </div>
 </header>  
 <!--Main-->
-<main>
-  <!--hero-->
-  <section class="product-hero">
-        <div class="product-hero-text">
-          <h1>Men's wear</h1>
-          <cite>"The most beautiful thing you can wear, is confidence"</cite>
-          <p>Confidence and comfort often goes hand in hand, that is why we at Rainydays haveasdas ads dasd asdas dasda sda sda a sdasdsdasdasd asd asda sd asdas </p>
-        </div>
-        <div class="product-hero-img">
-          <img src="images/productpage-men/mens-top_.jpg" alt="man in forest">
-        </div>
-  </section>
-  <!--Product list-->
-  <section class="mens-products">
-    <p class="loading">Loading...</p>
-  </section>
-</main>
+  <main>
+
+    <div class="card-container">
+        <a href="#">
+            <img src= "${products[i].image}" alt = "Image of the ${products[i].title}">
+            <div>
+                <div class="tags-sizes">
+                    <p class ="saletag">SALE</p>
+                    <p >${products[i].sizes[0]} - ${lastSize}</p>
+                </div>
+                <h2>${products[i].title}</h2>
+                <p class = "discounted"><span class = "discount">£${price}</span> £${discount}</p>
+            </div>
+        </a>
+    </div>
+
+
+  </main>
   <!--Footer-->
   <footer>
     <!--Help-->

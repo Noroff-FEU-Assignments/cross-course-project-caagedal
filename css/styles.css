@@ -38,6 +38,132 @@ main{
 
 
 /*------------------------------------------------------
+NEW CONTAINERS
+-------------------------------------------------------*/
+
+
+
+
+.womens-products1, .mens-products, .favorite-container, .sales1-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+    gap: 30px;
+}
+
+.card-container{
+    max-width: 300px;
+    box-shadow: 0 1px 10px 3px #2e47450c;
+}
+
+.card-container-small{
+    max-width: 250px;
+    box-shadow: 0 1px 10px 3px #2e47450c;
+}
+
+.card-container-small:hover{
+    max-width: 250px;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+    transition: 0.2s;
+}
+
+.card-container:hover{
+    max-width: 305px;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+    transition: 0.2s;
+}
+
+.card-container a, .card-container-small a{
+    color: white;
+}
+
+.container-image img, .card-container-small img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container-image-small{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-image{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-information-small, .card-information-sale-small{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-color);
+    height: 130px;
+    padding: 15px;   
+    justify-content: space-between;
+}
+
+.card-information, .card-information-sale{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-color);
+    height: 180px;
+    padding: 20px;   
+    justify-content: space-between;
+}
+
+.card-information-small h3, .card-information-sale-small h3{
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.card-information h2{
+    padding-bottom: 10px;
+}
+
+.card-information p{
+    font-size: 22px;
+}
+
+.card-information-sale h2{
+    padding: 10px 0;
+}
+
+.tags-sizes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizes-only{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sizes-only p{
+    font-size: 16px;
+}
+
+.saletag{
+    background-color: rgb(175, 28, 28);
+    padding: 1px 5px;
+
+}
+
+.discounted-small{
+    font-size: 20px;
+}
+
+.discount-small{
+    font-size: 16px;
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+
+/*------------------------------------------------------
 header
 -------------------------------------------------------*/
 
@@ -208,6 +334,8 @@ footer a:hover{
 Home
 ------------------------------------------------------------------------------------------------------*/
 
+
+
 .hero-home{
     display: flex;
     flex-direction: column;
@@ -229,22 +357,19 @@ Home
 
 .hero-home h1{
     font-size: 3em;
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
     font-weight: 400; 
 }
 
 .hero-home span{
     display: block;
-    font-size: 5rem;
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    font-size: 5rem;  
     font-family: 'Inika', serif;
     font-weight: 400;
 }
 
 .hero-home p{
     font-size: 1.5rem;
-    margin: 20px 0 10px 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin: 20px 0 10px 0; 
     font-weight: 600;
     
 }
@@ -276,13 +401,10 @@ Home
     background-color: var(--bg-color);
 }
 
-.bestsellers, .sale {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 50px 0;
-
+.bestsellers, .sales1, .loading {
+    text-align: center;
+    padding: 20px;
+    color: var(--theme-color);
 }
 
 .bestsellers-products{
@@ -293,13 +415,20 @@ Home
     gap: 20px;
 }
 
-.bestsellers h2, .sale h2{
+.bestsellers, .sales1{
     font-family: inika, serif;
     font-size: 3em;
     font-weight: 400;
     color: var(--theme-color);
-    text-shadow: 1px 1px 7px #a7a7a7;
 }
+
+.loading{
+    font-family: inika, serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--theme-color);
+}
+
 
 .newsletter{
     display: flex;
@@ -316,7 +445,6 @@ Home
 .newsletter p{
     font-size: 1.5rem;
     font-weight: 400;
-    text-shadow: 1px 1px 7px #7c7c7c;
 }
 
 .newsletter-signup{
@@ -331,7 +459,7 @@ Home
     background: rgba(255,255,255,0.7);
     box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
     padding: 0 60px 0 10px;
-    text-shadow: 1px 1px 7px #7c7c7c;
+    
     }
 
 .newsletter button{
@@ -340,14 +468,14 @@ Home
     color: var(--text-color);
     border: none;
     box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
-    text-shadow: 1px 1px 7px #7c7c7c;
+    
 }
 
 .newsletter h3{
     font-family: inika, serif;
     font-size: 3rem;
     font-weight: 400;
-    text-shadow: 1px 1px 7px #7c7c7c;
+    
 }
 
 .products-sale{
@@ -379,7 +507,7 @@ Home
 .home-info p{
     text-align: center;
     font-size: 1.2em;
-    text-shadow: 1px 1px 7px #7c7c7c;
+    
     padding: 20px 100px;
 }
 
@@ -482,97 +610,102 @@ Product page
     height: 20px;
     width: 20px;
     border-radius: 150px;
-    border-width: 3px #fff;
-    margin: 10px auto;
+    border: 2px solid;
+
 }
 
-.mens-royal1{
-    background-color: #083b58;
+.womens-products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 150px;
+    gap: 50px 150px;
 }
 
-.mens-royal2{
-    background-color: #b71414;
+/* .womens-products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px;
+    justify-content: space-between;
+} */
+
+.womens-products a{
+    color: white;
 }
 
-.mens-royal3{
-    background-color: #d8af1f;
+.womens-products h2{
+    font-size: 22px;
+    padding-bottom: 15px;
 }
 
-.mens-omnis1{
-    background-color: #89224b;
+.jacket-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;  
+    height: 500px; 
+
 }
 
-.mens-omnis2{
-    background-color: #345f00;
+.jacket-container img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-.mens-omnis3{
-    background-color: #fff;
+/* .card-image img{
+    object-fit: contain;
+    background-color: var(--bg-products-hover);
+    padding: 5px;
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+
+.size-sale{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-weight: 600;
 }
 
-.mens-imprint1{
-    background-color: #272a1c;
+.size{
+    display: flex;
+    justify-content: flex-end;
+   
+    font-weight: 600;
 }
 
-.mens-imprint2{
-    background-color: #fff;
+
+
+.prize{
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.mens-imprint3{
-    background-color: #000;
+.discount{
+    font-size: 18px;
+    text-decoration: line-through;
+    color: white;
+    padding-right: 10px;
+    font-weight: 400;
 }
 
-.mens-imprint4{
-    background-color: #4745b1;
+.discounted{
+    font-size: 24px;
+   
+    font-weight: 600;
 }
 
-.mens-imprint5{
-    background-color: #a2a50a;
+
+.jacket-info{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-color);
+    padding: 20px;
 }
 
-.mens-nomad1{
-    background-color: #5e5a3b;
-}
-
-.mens-nomad2{
-    background-color: #848484;
-}
-
-.mens-nomad3{
-    background-color: #000;
-}
-
-.mens-nomad4{
-    background-color: #3f3e7b;
-}
-
-.mens-nomad5{
-    background-color: #fff;
-}
-
-.mens-sigma1{
-    background-color: #004469;
-}
-
-.mens-sigma2{
-    background-color: #707070;
-}
-
-.mens-sigma3{
-    background-color: #000;
-}
-
-.mens-renegade1{
-    background-color: #8f8f8f;
-}
-
-.mens-renegade2{
-    background-color: #000;
-}
-
-.mens-renegade3{
-    background-color: #283d0e;
-}
 
 /*----------------------------------------------------------------------------------------------------------------------------------
 contact us
@@ -650,7 +783,7 @@ contact us
     color: var(--text-color);
     border: none;
     box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
-    text-shadow: 1px 1px 7px #7c7c7c;
+    
 }
 
 .contact button:hover{
