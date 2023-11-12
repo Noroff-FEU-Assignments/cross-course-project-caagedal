@@ -1,21 +1,82 @@
+import { products } from "./components";
 
-const url = "https://api.noroff.dev/api/v1/rainy-days";
+import { apiCall } from "./api";
 
-async function apiCall(){
-    
-    const response = await fetch(url);
-    const results = await response.json();
-    
-    
-    return results    
+
+const html = document.querySelector(".product-container");
+
+export async function createHTML(){
+
+    try{
+        
+        html.innerHTML = "";
+
+        for (let i = 0; i < products.length; i++){
+
+            const lastSize = products[i].sizes[products[i].sizes.length - 1];
+
+            if (products[i].price === products[i].discountedPrice){
+
+                html.innerHTML += 
+                `
+                <div class="card-container">
+                    <a href="product-specific/product-specific.html?id=${products[i].id}">
+                        <div class = "container-image">
+                            <img src= "${products[i].image}" alt = "Image of the ${products[i].title}">
+                        </div>
+                        <div class = "card-information">
+                            <div class="sizes-only">
+                                <p >${products[i].sizes[0]} - ${lastSize}</p>
+                            </div>
+                            <h2>${products[i].title}</h2>
+                            <p>£${products[i].price}</p>
+                        </div>
+                    </a>
+                </div>                                        
+                `
+            }
+            else{
+                
+                html.innerHTML +=     
+                `
+                <div class="card-container">
+                    <a href="product-specific/product-specific.html?id=${products[i].id}">
+                        <div class = "container-image">
+                            <img src= "${products[i].image}" alt = "Image of the ${products[i].title}">
+                        </div>
+                        <div class = "card-information-sale">
+                            <div class="tags-sizes">
+                                <p class ="saletag">SALE</p>
+                                <p >${products[i].sizes[0]} - ${lastSize}</p>
+                            </div>
+                            <h2>${products[i].title}</h2>
+                            <p class = "discounted"><span class = "discount">£${price}</span> £${discount}</p>
+                        </div>
+                    </a>
+                </div>
+                `
+            }
+
+        }
+
+    }
+    catch(error){
+        console.log("Something went wrong", error);
+    }
+
 }
 
+createHTML();
+
+
+import { products } from "./components.js";
 
 const errorMessage = `<p class = "error">Woops, something went wrong!</p>`; 
 
-let products = await apiCall();
-
 const womensJackets = document.querySelector(".womens-products1");
+const mensJackets = document.querySelector(".mens-products");
+const favoriteJackets = document.querySelector(".favorite-container");
+const SalesJackets = document.querySelector(".sales1-container");
 
 //Create html for the womens section
  
@@ -94,8 +155,6 @@ async function createWomensSection(){
 createWomensSection();
 
 
-const mensJackets = document.querySelector(".mens-products");
-
 //create mens section
 
 
@@ -110,7 +169,7 @@ async function createMensSection(){
             const price = products[i].price;
             const discount = products[i].discountedPrice;
 
-            
+            console.log(lastSize)
 
             if (products[i].gender === "Male"){
 
@@ -166,9 +225,6 @@ async function createMensSection(){
 
 createMensSection();
 
-
-const favoriteJackets = document.querySelector(".favorite-container");
-const SalesJackets = document.querySelector(".sales1-container");
 
 //bestsellers
 
@@ -314,87 +370,4 @@ async function createSalesSection(){
 }
 
 createSalesSection();
-
-
-
-
-// import { products } from "./components.js";
-
-
-const productSpecific = document.querySelector(".product-specifics")
-
-const queryString = document.location.search;
-
-const params = new URLSearchParams(queryString);
-
-const id = params.get("id");
-
-
-
-const newUrl = "https://api.noroff.dev/api/v1/rainy-days" +"/" + id
-
-
-
-async function apiCallnew(){
-    
-    try{
-        const response = await fetch(newUrl);
-        const details= await response.json();
-    
-       
-    
-        createProductSpecific(details);
-    }
-    catch(error){
-        console.log(error);
-        productSpecific.innerHTML = message("error", error);
-    }
-    finally{}   
-}
-
-apiCallnew();
-
-async function createProductSpecific(details){
-
-    try{
-        
-        productSpecific.innerHTML = ""
-
-        
-
-            productSpecific.innerHTML += 
-                `
-                    <div class="product-specific">
-                        <div class="product-display">
-                            <div class = "large">
-                                <img src="${details.image}" alt="Image of ${details.title}">
-                            </div>
-                        </div>
-                        <div class = "product-description">
-                            <h1>${details.title}</h1>
-                            <p>${details.description}</p>
-                            <p>£${details.price}</p>
-                            <p>Colour: ${details.baseColor}</p>
-                            <p>${details.sizes}</p>
-                            <div class = "cart-ps">
-                                <a href = "/checkout.html">Add to cart</a>
-                            </div>
-                            <div class = "return-w">
-                                <a href = "/index.html">Return to home</a>
-                            </div>
-                        </div>
-                    </div>
-                `
-
-        
-
-    }
-    catch(error){
-        console.log(error);
-        productSpecific.innerHTML += `${errorMessage}`
-    }
-    finally{}
-}
-
-createProductSpecific();
 
