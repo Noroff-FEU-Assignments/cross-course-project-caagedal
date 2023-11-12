@@ -163,6 +163,11 @@ NEW CONTAINERS
     padding-right: 10px;
 }
 
+.error{
+    color: var(--theme-color);
+    font-size: 22px;
+}
+
 /*------------------------------------------------------
 header
 -------------------------------------------------------*/
@@ -461,6 +466,8 @@ Home
     padding: 0 60px 0 10px;
     
     }
+
+
 
 .newsletter button{
     background-color: var(--theme-color);
