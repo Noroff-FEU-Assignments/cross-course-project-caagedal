@@ -84,6 +84,7 @@ nav a{
     padding: 20px 30px;
 }
 
+
 @media (min-width: 800px){
 
     header {
@@ -104,9 +105,15 @@ nav a{
         padding: 0 30px;
     }
 
-    .logo-nav{
+    .nav-logo11{
         display: flex;
-        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-logo11 img{
+        object-fit: contain;
+        width: 80%;
     }
 
     nav a{
