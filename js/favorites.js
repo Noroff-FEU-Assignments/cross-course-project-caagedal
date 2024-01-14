@@ -1,4 +1,5 @@
 import { products } from "./components.js";
+import { errorMessage } from "./components.js";
 
 const favoriteJackets = document.querySelector(".favorite-container");
 const SalesJackets = document.querySelector(".sales1-container");
@@ -47,15 +48,18 @@ async function createfavoriteSection(){
                             `
                             <div class="card-container-small">
                                 <a href="product-specific/product-specific.html?id=${products[i].id}">
+                                    <div class = "gender-tag">
+                                        <p>${products[i].gender}</p>
+                                    </div>
                                     <div class = "container-image-small">
                                         <img src= "${products[i].image}" alt = "Image of the ${products[i].title}">
                                     </div>
                                     <div class = "card-information-sale-small">
                                         <div class="tags-sizes">
                                             <p class ="saletag">SALE</p>
-                                            <p >${products[i].sizes[0]} - ${lastSize}</p>
+                                            <p>${products[i].sizes[0]} - ${lastSize}</p>
                                         </div>
-                                        <h3>${products[i].title}</h3>
+                                        <h3>${products[i].gender}'s ${products[i].title}</h3>
                                         <p class = "discounted-small"><span class = "discount-small">£${price}</span> £${discount}</p>
                                     </div>
                                 </a>

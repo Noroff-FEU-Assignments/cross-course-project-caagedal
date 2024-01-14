@@ -6,58 +6,57 @@ const mensJackets = document.querySelector(".mens-products");
 
 
 async function createMensSection(){
-
+  
     try{
-        mensJackets.innerHTML = "";
+
+        mensJackets.innerHTML ="";
 
         for (let i = 0; i < products.length; i++){
                     
-            const lastSize = products[i].sizes[products[i].sizes.length - 1];
-            const price = products[i].price;
-            const discount = products[i].discountedPrice;
 
-            
+            const price = products[i].prices.regular_price/100;
+            const discount = products[i].prices.sale_price/100;
+            const sale = products[i].on_sale;
 
-            if (products[i].gender === "Male"){
+            //Making sure to sort out mens jackets, so that only female jackets is published. 
+            if (products[i].categories[0].name === "Male"){
 
-                if (price === discount){
+                //Checking if an item is on sale or not.
+                if (sale === false){
                     mensJackets.innerHTML +=     
                             `
-                            <div class="card-container">
-                                <a href="product-specific/product-specific.html?id=${products[i].id}">
-                                    <div class = "container-image">
-                                        <img src= "${products[i].image}" alt = "Image of the ${products[i].title}">
-                                    </div>
-                                    <div class = "card-information">
-                                        <div class="sizes-only">
-                                            <p >${products[i].sizes[0]} - ${lastSize}</p>
-                                        </div>
-                                        <h2>${products[i].title}</h2>
-                                        <p>£${products[i].price}</p>
-                                    </div>
-                                </a>
-                            </div>
+                            <div class="product-card">
+                            <a href="product-specific/product-specific.html?id=${products[i].id}">
+                                <img src= "${products[i].images[0].src}" alt = "Image of the ${products[i].name}">
+                                <div class = "product-text">
+                                    <h3>${products[i].name}</h3>
+                                    <p>${price}</p>
+                                </div>
+                                <div class = "view-more">
+                                    <a href="product-specific/product-specific.html?id=${products[i].id}">View more</a>
+                                    
+                                </div>
+                            </a>
+                        </div>
                             `
                 }
                 else{
 
                     mensJackets.innerHTML +=     
                             `
-                            <div class="card-container">
-                                <a href="product-specific/product-specific.html?id=${products[i].id}">
-                                    <div class = "container-image">
-                                        <img src= "${products[i].image}" alt = "Image of the ${products[i].title}">
-                                    </div>
-                                    <div class = "card-information-sale">
-                                        <div class="tags-sizes">
-                                            <p class ="saletag">SALE</p>
-                                            <p >${products[i].sizes[0]} - ${lastSize}</p>
-                                        </div>
-                                        <h2>${products[i].title}</h2>
-                                        <p class = "discounted"><span class = "discount">£${price}</span> £${discount}</p>
-                                    </div>
-                                </a>
-                            </div>
+                            <div class="product-card">
+                            <span class="wdp-ribbon wdp-ribbon-two">Sale</span>
+                            <a href="product-specific/product-specific.html?id=${products[i].id}">
+                                <img src= "${products[i].images[0].src}" alt = "Image of the ${products[i].name}">
+                                <div class = "product-text">
+                                    <h3>${products[i].name}</h3>
+                                    <p><span class = "discount-small">${discount}</span>${price}</p>
+                                </div>
+                                <div class = "view-more">
+                                    <a href="product-specific/product-specific.html?id=${products[i].id}">View more</a>
+                                    
+                                </div>
+                            </a>
                             `
                 }
 
@@ -65,10 +64,13 @@ async function createMensSection(){
         }
     }
     catch(error){
-        mensJackets.innerHTML += `${errorMessage}`
+        mensJacketsJackets.innerHTML = errorMessage;
+        console.log(error);
+    }    
+    finally{
+
     }
-    finally{}
+
 }
 
 createMensSection();
-
