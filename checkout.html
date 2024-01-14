@@ -14,24 +14,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4639419757.js" crossorigin="anonymous"></script>
+  <!-- Hotjar Tracking Code for https://sage-kheer-a3f7a3.netlify.app/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3740216,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 <body>
 <!--header-->
 <header>
     <a href="index.html"><img src="images/homepage/RAINYDAYS-LOGO-SHORT.png" alt="Logo of rainydays, directs to homepage" class="logo-nav"></a>
     <input type="checkbox" id="menu-checkbox">
-    <label for="menu-checkbox" class="hamburger"><img src="images/other/BURGER-MENU.png" alt="hamburger-menu"></label>
+    <label for="menu-checkbox" class="hamburger"><i class="fas fa-bars" style="color: #ffffff;"></i></label>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="mens.html">Men's</a>
       <a href="womens.html">Women's</a>
       <a href="contact.html">Contact</a>
       <a href="about.html">About</a>
     </nav>
     <div class="shopping-cart">
-      <a href="checkout.html"><img src="images/other/SHOPING-BAG.png" alt="Shopping bag"></a>
+      <i class="fas fa-shopping-bag" style="color: #ffffff;"></i>
     </div>
-  </header> 
+  </header>  
 <!--Main-->
   <main>
 <!--Hero-->
@@ -86,25 +97,37 @@
         <div class="input-shipping">
             <h3>Shipping information</h3>
             <div class="ship-forms">
-                <label for="email">E-mail*</label>
-                <input type="email" name="email" id="email" placeholder="E-mail address" required>
-                <label for="firstname">First name*</label>
-                <input type="text" name="firstname" id="firstname" placeholder="First name" required>
-                <label for="lastname">Last name*</label>
-                <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
-                <label for="phonenumber">Phone number*</label>
-                <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone number" required>
-                <label for="address">Adress*</label>
-                <input type="text" name="address" id="address" placeholder="Address" required>
                 <div>
-                    <label for="city">City*</label>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail address" required>
+                </div>
+                <div>
+                    <label for="firstname">First name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="First name" required>
+                </div>
+                <div>
+                    <label for="lastname">Last name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
+                </div>
+                <div>
+                    <label for="phonenumber">Phone number</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone number" required>
+                </div>
+                <div>
+                    <label for="address">Adress</label>
+                    <input type="text" name="address" id="address" placeholder="Address" required>
+                </div>
+                <div>
+                    <label for="city">City</label>
                     <input type="text" name="city" id="city" placeholder="City" required>
-                    <label for="postal">Postal code*</label>
+                </div>
+                <div>
+                    <label for="postal">Postal code</label>
                     <input type="text" name="postal" id="postal" placeholder="Postal code" required>
                 </div>
             </div>
             <div class="ship-opt">
-                <h2>Shipping method</h2>
+                <h3>Shipping method</h3>
                 <div id="express">
                     <label><input type="radio" name="radio" value="Express delivery">Express delivery: <span>1-3 workdays, home-delivery.</span></label>
                 </div>
@@ -119,13 +142,13 @@
         <div class="input-billing">
             <h3>Billing information</h3>
             <div class="bill-forms">
-                <label for="cardname">Name on card*</label>
+                <label for="cardname">Name on card</label>
                 <input type="text" name="cardname" id="cardname" placeholder="Full name" required>
-                <label for="cardnumber">Card number*</label>
+                <label for="cardnumber">Card number</label>
                 <input type="text" name="cardnumber" id="cardnumber" placeholder="0000 0000 0000 0000" required>
-                <label for="expire">Expire date*</label>
+                <label for="expire">Expire date</label>
                 <input type="text" name="expire" id="expire" placeholder="MM/YY" required>
-                <label for="cvc">CVC/CVV*</label>
+                <label for="cvc">CVC/CVV</label>
                 <input type="text" name="cvc" id="cvc" placeholder="3 digits" required>
             </div>
             <div>

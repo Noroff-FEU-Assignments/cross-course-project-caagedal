@@ -1,4 +1,2 @@
-# cross-course-project-caagedal
-cross-course-project-caagedal created by GitHub Classroom.
-
-This is my course assignment for WCT
+# javascript1
+My entry to javascript1 project

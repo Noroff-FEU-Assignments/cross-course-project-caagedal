@@ -1,0 +1,44 @@
+
+
+nav, #menu-checkbox{
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav{
+    display: block;
+}
+
+.hamburger img{
+    max-width: 70%;
+}
+
+.logo-nav img{
+    max-width: 60%;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    background: var(--theme-color);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+nav{
+    position: absolute;
+    background-color: var(--theme-color);
+    top: 87px;
+    width: 100%;
+}
+
+nav a{
+    text-align: center;
+    display: block;
+    font-size: 1.3em;
+    color: var(--text-color);
+    padding: 20px 30px;
+}
